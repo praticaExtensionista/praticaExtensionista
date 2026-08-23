@@ -1,10 +1,13 @@
 :root {
-    --primary-color: #C5192D;      /* Vermelho oficial ODS 4 */
-    --primary-dark: #9A1323;
-    --text-dark: #222222;
-    --text-light: #555555;
+    --primary-color: #2D6A4F;      /* Verde sustentável ODS 13 */
+    --primary-dark: #1B4332;
+    --primary-light: #D8F3DC;
+    --accent: #52B788;
+    --text-dark: #212529;
+    --text-muted: #555555;
     --bg-light: #F8F9FA;
     --white: #FFFFFF;
+    --border-color: #E9ECEF;
 }
 
 * {
@@ -24,7 +27,7 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1020px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -33,18 +36,33 @@ body {
 header {
     background: var(--white);
     border-bottom: 3px solid var(--primary-color);
-    padding: 1rem 0;
+    padding: 1.2rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .logo {
-    font-size: 1.5rem;
-    color: var(--primary-color);
+    font-size: 1.4rem;
+    color: var(--primary-dark);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo span {
+    font-size: 0.75rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 nav ul {
@@ -57,6 +75,7 @@ nav a {
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 600;
+    font-size: 0.95rem;
     transition: color 0.2s;
 }
 
@@ -64,115 +83,148 @@ nav a:hover, nav a.active {
     color: var(--primary-color);
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
     color: var(--white);
     text-align: center;
     padding: 4rem 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .hero h2 {
     font-size: 2.2rem;
-    margin-bottom: 1rem;
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+    line-height: 1.25;
 }
 
 .hero p {
     font-size: 1.1rem;
     max-width: 650px;
-    margin: 0 auto 1.5rem auto;
+    margin: 0 auto;
+    opacity: 0.95;
 }
 
-/* Botoes */
-.btn {
-    display: inline-block;
-    background: var(--white);
-    color: var(--primary-color);
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.2s, background 0.2s;
-}
-
-.btn:hover {
-    background: #EFEFEF;
-    transform: translateY(-2px);
-}
-
-button.btn {
-    background: var(--primary-color);
-    color: var(--white);
-}
-
-button.btn:hover {
-    background: var(--primary-dark);
-}
-
-/* Cards & Grid */
-.destaques, .grid-acoes {
+/* Cards & Layout */
+.destaques, .grid-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.card, .info-card {
+    background: var(--white);
+    padding: 1.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card h3, .info-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.6rem;
+}
+
+.card p, .info-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.category-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.4rem;
+}
+
+.info-banner {
+    background: var(--primary-light);
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 6px;
     margin-bottom: 3rem;
 }
 
-.card, .card-acao {
-    background: var(--white);
-    padding: 1.5rem;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-    border-top: 4px solid var(--primary-color);
-}
-
-.card h3, .card-acao h3 {
-    margin-bottom: 0.5rem;
-    color: var(--primary-color);
-}
-
-.tag {
-    display: inline-block;
-    margin-top: 1rem;
-    font-size: 0.8rem;
-    background: #FFEBEF;
+.info-banner h3 {
     color: var(--primary-dark);
-    padding: 0.25rem 0.6rem;
-    border-radius: 12px;
-    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
-/* Paginas Internas */
+/* Páginas Internas */
 .content-page {
     flex: 1;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .content-page h2 {
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-size: 1.8rem;
 }
 
-.content-page h3 {
-    margin: 1.5rem 0 0.5rem 0;
+.article-section {
+    margin-top: 2rem;
 }
 
-.content-page ul {
-    margin-left: 1.5rem;
-    margin-top: 0.5rem;
+.article-section h3 {
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
 }
 
-/* Form */
+.metas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.meta-item {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    border-top: 3px solid var(--primary-color);
+}
+
+.meta-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.meta-item p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* Formulário */
 .form-contato {
     background: var(--white);
     padding: 2rem;
-    border-radius: 6px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-    margin-top: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
     max-width: 600px;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .form-group {
@@ -183,20 +235,42 @@ button.btn:hover {
     display: block;
     font-weight: 600;
     margin-bottom: 0.3rem;
+    font-size: 0.9rem;
 }
 
-.form-group input, .form-group select, .form-group textarea {
+.form-group input, .form-group textarea {
     width: 100%;
-    padding: 0.6rem;
+    padding: 0.65rem;
     border: 1px solid #CCC;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 0.95rem;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: var(--primary-dark);
 }
 
 /* Footer */
 footer {
-    background: #222;
-    color: #AAA;
+    background: #1B261D;
+    color: #A3B18A;
     text-align: center;
     padding: 1.5rem 0;
     margin-top: auto;
