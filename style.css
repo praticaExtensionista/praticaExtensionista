@@ -1,94 +1,204 @@
+:root {
+    --primary-color: #C5192D;      /* Vermelho oficial ODS 4 */
+    --primary-dark: #9A1323;
+    --text-dark: #222222;
+    --text-light: #555555;
+    --bg-light: #F8F9FA;
+    --white: #FFFFFF;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fcfcfc; 
-    color: #1b3a5b; 
+    background-color: var(--bg-light);
+    color: var(--text-dark);
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header & Nav */
 header {
-    background-color: #2a5c9a; 
-    padding: 20px;
-    color: white;
+    background: var(--white);
+    border-bottom: 3px solid var(--primary-color);
+    padding: 1rem 0;
 }
 
-nav {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav h1 {
-    font-size: 1.5em;
+.logo {
+    font-size: 1.5rem;
+    color: var(--primary-color);
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 1.5rem;
 }
 
-nav ul li a {
-    color: white;
+nav a {
     text-decoration: none;
-    font-weight: bold;
+    color: var(--text-dark);
+    font-weight: 600;
+    transition: color 0.2s;
 }
 
-nav ul li a:hover {
-    text-decoration: underline; 
+nav a:hover, nav a.active {
+    color: var(--primary-color);
 }
 
+/* Hero Section */
 .hero {
-    padding: 60px 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: var(--white);
     text-align: center;
-    background: #e6f0fa; 
+    padding: 4rem 1rem;
+    margin-bottom: 2rem;
 }
 
 .hero h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
 }
 
-.destaques {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 40px 20px;
-    gap: 20px;
+.hero p {
+    font-size: 1.1rem;
+    max-width: 650px;
+    margin: 0 auto 1.5rem auto;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 280px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+/* Botoes */
+.btn {
+    display: inline-block;
+    background: var(--white);
+    color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
 }
 
+.btn:hover {
+    background: #EFEFEF;
+    transform: translateY(-2px);
+}
+
+button.btn {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+button.btn:hover {
+    background: var(--primary-dark);
+}
+
+/* Cards & Grid */
+.destaques, .grid-acoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.card, .card-acao {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    border-top: 4px solid var(--primary-color);
+}
+
+.card h3, .card-acao h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    background: #FFEBEF;
+    color: var(--primary-dark);
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+/* Paginas Internas */
+.content-page {
+    flex: 1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.content-page h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.content-page h3 {
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.content-page ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Form */
+.form-contato {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    margin-top: 1.5rem;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Footer */
 footer {
-    background-color: #2a5c9a; 
-    color: white;
+    background: #222;
+    color: #AAA;
     text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .destaques {
-        flex-direction: column;
-    }
-
-    .card {
-        width: 100%;
-    }
+    padding: 1.5rem 0;
+    margin-top: auto;
+    font-size: 0.9rem;
 }
