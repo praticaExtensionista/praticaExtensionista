@@ -1,13 +1,13 @@
 :root {
-    --primary-color: #2D6A4F;      /* Verde sustentável ODS 13 */
-    --primary-dark: #1B4332;
-    --primary-light: #D8F3DC;
-    --accent: #52B788;
+    --primary-color: #2D6A4F;      /* Verde floresta sustentável */
+    --primary-dark: #1B4332;       /* Verde escuro profundo */
+    --primary-light: #D8F3DC;      /* Fundo verde claro suave */
+    --accent: #40916C;             /* Verde esmeralda para destaques */
     --text-dark: #212529;
-    --text-muted: #555555;
-    --bg-light: #F8F9FA;
+    --text-muted: #495057;
+    --bg-light: #F4F7F5;          /* Fundo suave com leve tom esverdeado */
     --white: #FFFFFF;
-    --border-color: #E9ECEF;
+    --border-color: #DDE5B6;       /* Borda ecológica suave */
 }
 
 * {
@@ -37,7 +37,7 @@ header {
     background: var(--white);
     border-bottom: 3px solid var(--primary-color);
     padding: 1.2rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
 .nav-container {
@@ -59,7 +59,7 @@ header {
 .logo span {
     font-size: 0.75rem;
     background: var(--primary-color);
-    color: white;
+    color: var(--white);
     padding: 0.2rem 0.5rem;
     border-radius: 4px;
     font-weight: bold;
@@ -83,7 +83,7 @@ nav a:hover, nav a.active {
     color: var(--primary-color);
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
     color: var(--white);
@@ -129,7 +129,7 @@ nav a:hover, nav a.active {
     padding: 1.75rem;
     border-radius: 8px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
 .card-icon {
@@ -152,7 +152,7 @@ nav a:hover, nav a.active {
     font-size: 0.75rem;
     text-transform: uppercase;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--accent);
     margin-bottom: 0.4rem;
 }
 
@@ -169,7 +169,7 @@ nav a:hover, nav a.active {
     margin-bottom: 0.5rem;
 }
 
-/* Páginas Internas */
+/* Paginas Internas */
 .content-page {
     flex: 1;
     padding-top: 2rem;
@@ -216,7 +216,7 @@ nav a:hover, nav a.active {
     color: var(--text-muted);
 }
 
-/* Formulário */
+/* Formulario */
 .form-contato {
     background: var(--white);
     padding: 2rem;
@@ -224,7 +224,7 @@ nav a:hover, nav a.active {
     border: 1px solid var(--border-color);
     max-width: 600px;
     margin-top: 1.5rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
 .form-group {
@@ -241,7 +241,7 @@ nav a:hover, nav a.active {
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 0.65rem;
-    border: 1px solid #CCC;
+    border: 1px solid #B7C4B8;
     border-radius: 4px;
     font-size: 0.95rem;
 }
@@ -253,7 +253,7 @@ nav a:hover, nav a.active {
 
 .btn {
     background: var(--primary-color);
-    color: white;
+    color: var(--white);
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 4px;
@@ -269,8 +269,8 @@ nav a:hover, nav a.active {
 
 /* Footer */
 footer {
-    background: #1B261D;
-    color: #A3B18A;
+    background: #081C15;
+    color: #95D5B2;
     text-align: center;
     padding: 1.5rem 0;
     margin-top: auto;
