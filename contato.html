@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Participe | ODS 4</title>
+    <title>Contato e Dúvidas | ODS 13</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container nav-container">
-            <h1 class="logo">Projeto Educa+</h1>
+            <h1 class="logo">Clima em Ação <span>ODS 13</span></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="acoes.html">Ações</a></li>
+                    <li><a href="sobre.html">O que é o ODS 13</a></li>
+                    <li><a href="acoes.html">Ações Globais & Locais</a></li>
                     <li><a href="contato.html" class="active">Contato</a></li>
                 </ul>
             </nav>
@@ -22,32 +22,28 @@
     </header>
 
     <main class="container content-page">
-        <h2>Faça Parte da Mudança</h2>
-        <p>Quer ser voluntário ministrando oficinas, apoiar na organização ou cadastrar sua escola parceira? Fale conosco.</p>
-        
-        <form class="form-contato">
+        <h2>Fale com os Autores do Projeto</h2>
+        <p>Tem dúvidas sobre o material informativo apresentado, sugestões de fontes acadêmicas ou deseja saber mais sobre o trabalho de extensão? Deixe sua mensagem abaixo.</p>
+
+        <form class="form-contato" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso! Obrigado pelo contato.'); this.reset();">
             <div class="form-group">
                 <label for="nome">Nome Completo</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
             </div>
-            
+
             <div class="form-group">
                 <label for="email">E-mail</label>
                 <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
             </div>
-            
+
             <div class="form-group">
-                <label for="interesse">Área de Interesse</label>
-                <select id="interesse" name="interesse">
-                    <option value="voluntariado">Voluntariado em Aulas</option>
-                    <option value="doacao">Doação de Equipamentos/Livros</option>
-                    <option value="parceria">Parceria Institucional / Escolas</option>
-                </select>
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Dúvida, sugestão ou comentário" required>
             </div>
 
             <div class="form-group">
                 <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como você gostaria de colaborar?" required></textarea>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva aqui seu comentário ou dúvida..." required></textarea>
             </div>
 
             <button type="submit" class="btn">Enviar Mensagem</button>
@@ -56,7 +52,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Projeto Educa+ - Prática Extensionista Universitária</p>
+            <p>&copy; 2026 Portal Informativo ODS 13 • Prática Extensionista Universitária</p>
         </div>
     </footer>
 </body>
