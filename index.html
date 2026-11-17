@@ -3,61 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ODS 13 | Ação Contra a Mudança Global do Clima</title>
+    <title>Clima em Ação | ODS 13 — Ação Contra a Mudança Global do Clima</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container nav-container">
-            <h1 class="logo">Clima em Ação <span>ODS 13</span></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Início</a></li>
-                    <li><a href="sobre.html">O que é o ODS 13</a></li>
-                    <li><a href="acoes.html">Ações Globais & Locais</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
+
+    <!-- Cabeçalho Fixo -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#inicio" class="logo">
+                <span class="logo-badge">ODS 13</span>
+                <span class="logo-text">Clima em Ação</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#entenda">O que é</a>
+                <a href="#curiosidades">Você Sabia?</a>
+                <a href="#dicas">Dicas Práticas</a>
+                <a href="#quiz">Quiz Rápido</a>
+                <a href="#contato" class="btn-nav">Participar</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <span class="badge">Agenda 2030 da ONU</span>
-                <h2>Tomar Medidas Urgentes Contra a Mudança do Clima</h2>
-                <p>Compreenda as causas, impactos e as principais iniciativas necessárias para conter o aquecimento global e construir um futuro sustentável.</p>
+    <!-- Seção Hero -->
+    <section id="inicio" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="tag-pill">Agenda 2030 • ONU • Educação Climática</span>
+                <h1>Cuidar do clima começa nas escolhas do nosso dia a dia.</h1>
+                <p>Entenda de forma direta o que é o Objetivo de Desenvolvimento Sustentável 13, descubra curiosidades surpreendentes sobre o planeta e veja como pequenas mudanças na sua rotina ajudam a frear o aquecimento global.</p>
+                <div class="hero-buttons">
+                    <a href="#dicas" class="btn btn-primary">Ver Dicas Práticas</a>
+                    <a href="#curiosidades" class="btn btn-secondary">Descobrir Curiosidades</a>
+                </div>
             </div>
-        </section>
 
-        <section class="destaques container">
-            <div class="card">
-                <div class="card-icon">🌡️</div>
-                <h3>Aquecimento Global</h3>
-                <p>O aumento contínuo das temperaturas médias globais provocado pela emissão desmedida de gases de efeito estufa e a queima de combustíveis fósseis.</p>
+            <div class="hero-card-visual">
+                <div class="ods-box">
+                    <div class="ods-header">
+                        <span class="ods-number">13</span>
+                        <span class="ods-title">AÇÃO CONTRA A MUDANÇA GLOBAL DO CLIMA</span>
+                    </div>
+                    <p class="ods-quote">"Tomar medidas urgentes para combater a mudança climática e seus impactos, fortalecendo nossa capacidade de adaptação."</p>
+                    <div class="ods-stats">
+                        <div>
+                            <strong>+1,5 °C</strong>
+                            <span>Limite crítico do Acordo de Paris</span>
+                        </div>
+                        <div>
+                            <strong>2030</strong>
+                            <span>Meta global da ONU</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card">
-                <div class="card-icon">🌊</div>
-                <h3>Eventos Extremos</h3>
-                <p>A intensificação de secas severas, enchentes históricas e tempestades fora de época que afetam a infraestrutura urbana e a produção de alimentos.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon">🌱</div>
-                <h3>Transição Ecológica</h3>
-                <p>A substituição de fontes fósseis por energias limpas (solar, eólica), reflorestamento e a adoção da economia circular nas cidades.</p>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="info-banner container">
-            <h3>Por que agir agora?</h3>
-            <p>O Acordo de Paris estabeleceu a meta de limitar o aumento da temperatura média global a 1,5°C acima dos níveis pré-industriais. A conscientização e a mudança nas políticas públicas e hábitos de consumo são peças-chave nessa missão.</p>
-        </section>
-    </main>
-
-    <footer>
+    <!-- Seção Informativa: O que é a ODS 13 -->
+    <section id="entenda" class="section bg-white">
         <div class="container">
-            <p>&copy; 2026 Portal Informativo ODS 13 • Prática Extensionista Universitária</p>
+            <div class="section-header">
+                <span class="section-subtitle">Conteúdo Informativo</span>
+                <h2>O que realmente está acontecendo com o clima?</h2>
+                <p>Não é apenas sobre "fazer mais calor". A mudança climática altera chuvas, encarece alimentos e afeta diretamente a saúde e a segurança das cidades.</p>
+            </div>
+
+            <div class="info-cards">
+                <article class="card">
+                    <div class="card-icon">🌡️</div>
+                    <h3>O Efeito Estufa Acelerado</h3>
+                    <p>O efeito estufa natural mantém a Terra aquecida para existir vida. O problema é o excesso de gases (como CO₂ e metano) vindos de combustíveis fósseis, desmatamento e lixo, que prendem calor demais na atmosfera.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">⛈️</div>
+                    <h3>Eventos Extremos Mais Frequentes</h3>
+                    <p>Com oceanos e atmosfera mais quentes, tempestades ficam mais intensas e secas duram mais tempo. Isso provoca enchentes urbanas, deslizamentos, ondas de calor e perda de safras agrícolas.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">🌱</div>
+                    <h3>Mitigação e Adaptação</h3>
+                    <p><strong>Mitigar</strong> é reduzir as emissões agora (energia limpa, menos desperdício). <strong>Adaptar</strong> é preparar nossas cidades (mais árvores, drenagem eficiente e alertas de risco) para os impactos já em curso.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Curiosidades ("Você Sabia?") -->
+    <section id="curiosidades" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Curiosidades & Fatos</span>
+                <h2>Você sabia disso sobre o clima?</h2>
+                <p>Dados reais e conexões pouco conhecidas entre hábitos cotidianos e o meio ambiente.</p>
+            </div>
+
+            <div class="curiosities-grid">
+                <article class="curiosity-item">
+                    <span class="curiosity-badge">Alimentação</span>
+                    <h3>Desperdiçar comida aquece o planeta</h3>
+                    <p>Se o desperdício global de alimentos fosse um país, ele seria o <strong>3º maior emissor de gases de efeito estufa</strong> do mundo, atrás apenas da China e dos EUA. Além da energia gasta para produzir e transportar, comida apodrecendo em aterros libera gás metano.</p>
+                </article>
+
+                <article class="curiosity-item">
+                    <span class="curiosity-badge">Cidades & Conforto</span>
+                    <h3>Uma árvore vale por vários aparelhos de ar-condicionado</h3>
+                    <p>Em bairros arborizados, a sombra e a evapotranspiração das folhas podem reduzir a temperatura local em até <strong>4 °C a 8 °C</strong> em comparação com ruas asfaltadas sem árvores — combatendo as chamadas "ilhas de calor".</p>
+                </article>
+
+                <article class="curiosity-item">
+                    <span class="curiosity-badge">Vida Digital</span>
+                    <h3>A nuvem também consome energia</h3>
+                    <p>Data centers que armazenam vídeos, fotos e inteligência artificial funcionam 24 horas por dia e precisam de muita eletricidade para refrigeração. Apagar arquivos duplicados e usar o modo escuro em telas OLED ajuda a economizar energia.</p>
+                </article>
+
+                <article class="curiosity-item">
+                    <span class="curiosity-badge">Oceanos</span>
+                    <h3>O mar absorve cerca de 90% do calor extra</h3>
+                    <p>Os oceanos funcionam como um gigantesco escudo térmico e absorvem quase um terço do CO₂ emitido. Porém, esse aquecimento provoca o branqueamento dos corais e eleva o nível do mar.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Interativa: Dicas Práticas -->
+    <section id="dicas" class="section bg-green-soft">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Dicas Práticas</span>
+                <h2>O que você pode fazer hoje?</h2>
+                <p>Escolha uma categoria abaixo e veja ações simples que reduzem sua pegada de carbono e ainda ajudam no orçamento:</p>
+            </div>
+
+            <div class="tabs-container" role="tablist">
+                <button class="tab-btn active" onclick="openTab(event, 'tab-casa')" role="tab">🏠 Em Casa</button>
+                <button class="tab-btn" onclick="openTab(event, 'tab-consumo')" role="tab">🛒 Nas Compras</button>
+                <button class="tab-btn" onclick="openTab(event, 'tab-mobilidade')" role="tab">🚲 Na Rua e Transporte</button>
+            </div>
+
+            <div id="tab-casa" class="tab-content active">
+                <ul class="tips-list">
+                    <li>
+                        <strong>Aproveite o calor residual ao cozinhar:</strong> Desligue o fogo do fogão elétrico ou a gás 2 a 3 minutos antes do fim do preparo — o calor da panela termina o cozimento e economiza gás/energia.
+                    </li>
+                    <li>
+                        <strong>Congele o que não vai consumir logo:</strong> Pães, frutas maduras e sobras de refeições podem ser congelados em porções. Evitar lixo orgânico corta emissões de metano e economiza no mercado.
+                    </li>
+                    <li>
+                        <strong>Tire aparelhos da tomada à noite:</strong> Televisores, micro-ondas e carregadores em <em>stand-by</em> podem representar até 12% do consumo residencial de energia.
+                    </li>
+                    <li>
+                        <strong>Separe recicláveis limpos:</strong> Papelão, alumínio e plástico reciclados gastam uma fração da energia necessária para fabricar materiais virgens.
+                    </li>
+                </ul>
+            </div>
+
+            <div id="tab-consumo" class="tab-content">
+                <ul class="tips-list">
+                    <li>
+                        <strong>Prefira alimentos da estação e produtores locais:</strong> Frutas e verduras da época precisam de menos estufas, menos fertilizantes e viajam distâncias menores até a sua mesa.
+                    </li>
+                    <li>
+                        <strong>Experimente a "Segunda Sem Carne":</strong> Substituir a carne vermelha por leguminosas (feijão, lentilha, grão-de-bico) apenas 1 dia na semana economiza milhares de litros de água e reduz drasticamente emissões.
+                    </li>
+                    <li>
+                        <strong>Dê vida longa às roupas e eletrônicos:</strong> A indústria têxtil responde por cerca de 8% a 10% das emissões globais. Consertar, doar ou comprar em brechós faz diferença real.
+                    </li>
+                    <li>
+                        <strong>Leve sua sacola retornável:</strong> Uma sacola reutilizável evita centenas de sacolas plásticas descartáveis ao longo do ano.
+                    </li>
+                </ul>
+            </div>
+
+            <div id="tab-mobilidade" class="tab-content">
+                <ul class="tips-list">
+                    <li>
+                        <strong>Resolva trajetos curtos a pé ou de bicicleta:</strong> Distâncias de até 2 km feitas a pé evitam congestionamentos, melhoram a saúde e zeram emissões no trajeto.
+                    </li>
+                    <li>
+                        <strong>Mantenha os pneus calibrados:</strong> Pneus murchos aumentam o atrito com o asfalto e fazem o carro gastar até 10% mais combustível (e emitir mais CO₂).
+                    </li>
+                    <li>
+                        <strong>Combine caronas ou use transporte coletivo:</strong> Dividir o trajeto para o trabalho ou faculdade tira veículos das ruas e reduz o custo por pessoa.
+                    </li>
+                    <li>
+                        <strong>Plante e cuide de árvores na calçada:</strong> Verifique as espécies adequadas junto à prefeitura da sua cidade e ajude a ampliar áreas verdes no bairro.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mini Quiz Interativo -->
+    <section id="quiz" class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Teste Rápido</span>
+                <h2>Mito ou Verdade sobre o Clima?</h2>
+                <p>Clique na resposta que você acha correta para conferir a explicação:</p>
+            </div>
+
+            <div class="quiz-box">
+                <p class="quiz-question" id="quiz-question">"Plantar árvores sozinho já resolve toda a crise climática, mesmo sem reduzir a queima de combustíveis fósseis."</p>
+                <div class="quiz-actions">
+                    <button class="btn btn-secondary" onclick="checkQuiz(false)">Mito</button>
+                    <button class="btn btn-secondary" onclick="checkQuiz(true)">Verdade</button>
+                </div>
+                <div id="quiz-feedback" class="quiz-feedback" aria-live="polite"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato / Participação Comunitária -->
+    <section id="contato" class="section">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <span class="section-subtitle">Prática Extensionista</span>
+                <h2>Leve essa conversa adiante</h2>
+                <p>Este portal faz parte de um projeto de extensão universitária voltado à conscientização da comunidade sobre a <strong>ODS 13 (Ação Contra a Mudança Global do Clima)</strong>.</p>
+                <ul class="contact-highlights">
+                    <li>✅ Conteúdo acessível para escolas, famílias e moradores</li>
+                    <li>✅ Compartilhe este link ou QR Code no seu bairro</li>
+                    <li>✅ Envie sugestões de temas, dúvidas ou iniciativas locais</li>
+                </ul>
+            </div>
+
+            <form class="form-contato" onsubmit="handleContact(event)">
+                <h3>Envie sua dúvida ou sugestão</h3>
+                <div class="form-group">
+                    <label for="nome">Seu Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Maria Silva" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem ou Dica Sustentável</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte uma ação legal do seu bairro ou tire uma dúvida..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+                <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <strong>Clima em Ação — ODS 13</strong>
+                <p>Projeto de Extensão Universitária • Educação Ambiental e Cidadania</p>
+            </div>
+            <div class="footer-note">
+                <p>Alinhado aos Objetivos de Desenvolvimento Sustentável da ONU (Agenda 2030).</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        function openTab(evt, tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+        function checkQuiz(userSaidTrue) {
+            const feedback = document.getElementById('quiz-feedback');
+            if (!userSaidTrue) {
+                feedback.className = 'quiz-feedback correct';
+                feedback.innerHTML = '<strong>Acertou! É MITO.</strong> Reflorestar é fundamental, mas não há área disponível no planeta capaz de absorver todo o carbono emitido se continuarmos queimando petróleo, carvão e gás no ritmo atual. Precisamos fazer as duas coisas juntas.';
+            } else {
+                feedback.className = 'quiz-feedback wrong';
+                feedback.innerHTML = '<strong>Na verdade, é MITO!</strong> Embora plantar árvores seja essencial, apenas o reflorestamento não dá conta do volume atual de emissões. É indispensável combinar áreas verdes com transição energética e redução de desperdícios.';
+            }
+        }
+
+        function handleContact(event) {
+            event.preventDefault();
+            const status = document.getElementById('form-status');
+            status.textContent = 'Mensagem enviada com sucesso! Obrigado por contribuir com a educação climática.';
+            event.target.reset();
+        }
+    </script>
 </body>
 </html>
